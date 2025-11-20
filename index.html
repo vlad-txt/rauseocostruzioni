@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rauseo Costruzioni Srl - Edilizia e Grandi Opere</title>
+    <meta name="description"
+        content="Rauseo Costruzioni Srl: esperti in eolico, solare, costruzione strade, acquedotti e opere civili. Qualità e professionalità dal cuore dell'Irpinia.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="images/logo.jpeg" alt="Rauseo Costruzioni Srl Logo">
+            </a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#chi-siamo" class="nav-link">Chi Siamo</a></li>
+                    <li><a href="#servizi" class="nav-link">Servizi</a></li>
+                    <li><a href="#progetti" class="nav-link">Progetti</a></li>
+                    <li><a href="#contatti" class="nav-link">Contatti</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <span class="close-menu">&times;</span>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#chi-siamo">Chi Siamo</a></li>
+            <li><a href="#servizi">Servizi</a></li>
+            <li><a href="#progetti">Progetti</a></li>
+            <li><a href="#contatti">Contatti</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div id="hero-canvas"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content container fade-in-up">
+            <h1>Costruiamo il Futuro con Solidità e Innovazione</h1>
+            <p>Leader nel settore delle costruzioni civili, industriali e delle energie rinnovabili.</p>
+            <div class="hero-buttons">
+                <a href="#servizi" class="btn btn-primary">I Nostri Servizi</a>
+                <a href="#contatti" class="btn btn-outline">Contattaci</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chi Siamo Section -->
+    <section id="chi-siamo" class="section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Chi Siamo</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text fade-in-left">
+                    <h3>Esperienza e Professionalità al Vostro Servizio</h3>
+                    <p><strong>Rauseo Costruzioni Srl</strong> è un punto di riferimento nel settore dell'edilizia e
+                        delle grandi opere. Con sede a Scampitella (AV), operiamo su tutto il territorio nazionale
+                        offrendo soluzioni all'avanguardia.</p>
+                    <p>La nostra azienda si distingue per la capacità di gestire progetti complessi, dalle
+                        infrastrutture stradali agli impianti per le energie rinnovabili (eolico e solare), garantendo
+                        sempre i più alti standard di qualità e sicurezza.</p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check-circle"></i> Personale altamente qualificato</li>
+                        <li><i class="fas fa-check-circle"></i> Macchinari di ultima generazione</li>
+                        <li><i class="fas fa-check-circle"></i> Rispetto dei tempi di consegna</li>
+                    </ul>
+                </div>
+                <div class="about-gallery fade-in-right">
+                    <div class="gallery-grid">
+                        <div class="gallery-item"><img
+                                src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+                                alt="Costruzioni"></div>
+                        <div class="gallery-item"><img
+                                src="https://images.unsplash.com/photo-1541976590-713941681591?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+                                alt="Cantiere"></div>
+                        <div class="gallery-item"><img
+                                src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+                                alt="Ingegneria"></div>
+                        <div class="gallery-item"><img
+                                src="https://images.unsplash.com/photo-1590986469905-d87b6302ce24?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+                                alt="Lavori"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servizi Section -->
+    <section id="servizi" class="section bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>I Nostri Servizi</h2>
+                <div class="divider"></div>
+                <p class="section-subtitle">Operiamo in diversi settori con competenza e tecnologie avanzate.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="icon-box">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3>Eolico</h3>
+                    <p>Realizzazione di infrastrutture e opere civili per parchi eolici.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="icon-box">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                    <h3>Solare</h3>
+                    <p>Installazione e predisposizione di impianti fotovoltaici su larga scala.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="icon-box">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3>Costruzione Strade</h3>
+                    <p>Asfaltatura, manutenzione e realizzazione di nuove arterie stradali.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="icon-box">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Acquedotti e Fognature</h3>
+                    <p>Scavi e posa in opera di reti idriche e fognarie.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="icon-box">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3>Costruzioni Civili</h3>
+                    <p>Edifici residenziali, commerciali e ristrutturazioni.</p>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="icon-box">
+                        <i class="fas fa-bridge"></i>
+                    </div>
+                    <h3>Opere Strutturali</h3>
+                    <p>Consolidamenti, opere in cemento armato e strutture speciali.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progetti Section -->
+    <section id="progetti" class="section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>I Nostri Progetti</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="projects-masonry fade-in-up">
+                <div class="project-item">
+                    <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Parco Eolico">
+                    <div class="project-overlay">
+                        <h4>Parco Eolico Irpinia</h4>
+                        <p>Realizzazione fondazioni e viabilità</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Impianto Fotovoltaico">
+                    <div class="project-overlay">
+                        <h4>Impianto Fotovoltaico</h4>
+                        <p>Installazione pannelli su copertura industriale</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Strada Provinciale">
+                    <div class="project-overlay">
+                        <h4>Rifacimento Manto Stradale</h4>
+                        <p>SP 123 - Lavori di asfaltatura</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="https://images.unsplash.com/photo-1590986469905-d87b6302ce24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Cantiere Edile">
+                    <div class="project-overlay">
+                        <h4>Complesso Residenziale</h4>
+                        <p>Costruzione palazzina A</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Scavi">
+                    <div class="project-overlay">
+                        <h4>Rete Fognaria</h4>
+                        <p>Scavi e posa tubazioni</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                        alt="Lavori in corso">
+                    <div class="project-overlay">
+                        <h4>Consolidamento Strutturale</h4>
+                        <p>Intervento su viadotto</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contatti Section -->
+    <section id="contatti" class="section bg-dark text-white">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="text-white">Contattaci</h2>
+                <div class="divider bg-primary"></div>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info fade-in-left">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Sede Legale</h4>
+                            <p>Via Piano di Contra, 118<br>83050 Scampitella (AV)</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Telefono / Fax</h4>
+                            <p><a href="tel:082793494">0827 93494</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@rauseocostruzioni.com">info@rauseocostruzioni.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-file-invoice"></i>
+                        <div>
+                            <h4>Dati Fiscali</h4>
+                            <p>P.IVA: 02514210646</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper fade-in-right">
+                    <!-- Note: This form requires a backend script (e.g., PHP) to function on Aruba -->
+                    <form action="send_email.php" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="nome" placeholder="Il tuo nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="La tua email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="oggetto" placeholder="Oggetto" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="messaggio" rows="5" placeholder="Il tuo messaggio" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Invia Messaggio</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h3>Rauseo Costruzioni Srl</h3>
+                <p>Costruiamo con passione e competenza.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#chi-siamo">Chi Siamo</a>
+                <a href="#servizi">Servizi</a>
+                <a href="#contatti">Contatti</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2023 Rauseo Costruzioni Srl. Tutti i diritti riservati. P.IVA 02514210646</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/hero-3d.js"></script>
+</body>
+
+</html>
