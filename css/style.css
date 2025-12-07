@@ -128,6 +128,25 @@ h3 {
     width: 100%;
 }
 
+.btn-outline-white {
+    background-color: transparent;
+    border: 2px solid var(--white);
+    color: var(--white);
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.btn-outline-white:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
 /* Header */
 #header {
     background-color: var(--white);
@@ -136,7 +155,7 @@ h3 {
     width: 100%;
     top: 0;
     z-index: 1000;
-    height: 80px;
+    height: 100px;
     display: flex;
     align-items: center;
 }
@@ -148,7 +167,7 @@ h3 {
 }
 
 .logo img {
-    height: 50px;
+    height: 80px;
     /* Adjust based on actual logo aspect ratio */
 }
 
@@ -256,6 +275,16 @@ h3 {
     overflow: hidden;
 }
 
+#hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
 #hero-canvas {
     position: absolute;
     top: 0;
@@ -328,6 +357,11 @@ h3 {
     color: var(--white);
 }
 
+.bg-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
 .section-header {
     margin-bottom: 60px;
 }
@@ -396,6 +430,63 @@ h3 {
 
 .gallery-item:hover img {
     transform: scale(1.1);
+}
+
+/* Owners Section */
+.owners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    justify-content: center;
+}
+
+.owner-card {
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    text-align: center;
+    padding-bottom: 20px;
+    transition: var(--transition);
+}
+
+.owner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.owner-image {
+    height: 300px;
+    overflow: hidden;
+}
+
+.owner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.owner-card:hover .owner-image img {
+    transform: scale(1.05);
+}
+
+.owner-info {
+    padding: 20px;
+}
+
+.owner-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.owner-role {
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
 }
 
 /* Services Section */
