@@ -61,7 +61,10 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div id="hero-canvas"></div>
+        <video autoplay muted loop playsinline id="hero-video">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-clouds-and-blue-sky-2408-large.mp4" type="video/mp4">
+            <!-- Placeholder video of sky/clouds/construction vibe -->
+        </video>
         <div class="hero-overlay"></div>
         <div class="hero-content container fade-in-up">
             <h1>Costruiamo il Futuro con Solidità e Innovazione</h1>
@@ -109,6 +112,40 @@
                         <div class="gallery-item"><img
                                 src="https://images.unsplash.com/photo-1590986469905-d87b6302ce24?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
                                 alt="Lavori"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Owners Section (Inside Chi Siamo or separate, user asked for it in Chi Siamo) -->
+    <section id="owners" class="section bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>I Nostri Fondatori</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="owners-grid">
+                <div class="owner-card fade-in-up">
+                    <div class="owner-image">
+                        <!-- Placeholder for Libero Rauseo -->
+                        <img src="https://ui-avatars.com/api/?name=Libero+Rauseo&background=b91d1d&color=fff&size=256" alt="Libero Rauseo">
+                    </div>
+                    <div class="owner-info">
+                        <h3>Libero Rauseo</h3>
+                        <p class="owner-role">Fondatore & Amministratore</p>
+                        <p>Con decenni di esperienza nel settore, guida l'azienda con passione e lungimiranza.</p>
+                    </div>
+                </div>
+                <div class="owner-card fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="owner-image">
+                        <!-- Placeholder for Massimo Rauseo -->
+                        <img src="https://ui-avatars.com/api/?name=Massimo+Rauseo&background=1f2937&color=fff&size=256" alt="Massimo Rauseo">
+                    </div>
+                    <div class="owner-info">
+                        <h3>Massimo Rauseo</h3>
+                        <p class="owner-role">Direttore Tecnico</p>
+                        <p>Esperto in grandi opere e innovazione tecnologica, supervisiona ogni progetto con meticolosità.</p>
                     </div>
                 </div>
             </div>
@@ -230,6 +267,16 @@
         </div>
     </section>
 
+    <!-- Lavora con Noi Section -->
+    <section id="lavora-con-noi" class="section bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="text-white">Lavora con Noi</h2>
+            <div class="divider bg-white"></div>
+            <p class="mb-4">Siamo sempre alla ricerca di nuovi talenti da inserire nel nostro team. Se hai passione per l'edilizia e vuoi crescere in un ambiente dinamico, inviaci la tua candidatura.</p>
+            <a href="mailto:info@rauseocostruzioni.com?subject=Candidatura" class="btn btn-outline-white mt-3">Invia CV</a>
+        </div>
+    </section>
+
     <!-- Contatti Section -->
     <section id="contatti" class="section bg-dark text-white">
         <div class="container">
@@ -250,7 +297,7 @@
                         <i class="fas fa-phone-alt"></i>
                         <div>
                             <h4>Telefono / Fax</h4>
-                            <p><a href="tel:082793494">0827 93494</a></p>
+                            <p><a href="tel:08271882662">0827 1882662</a></p>
                         </div>
                     </div>
                     <div class="info-item">
@@ -258,6 +305,7 @@
                         <div>
                             <h4>Email</h4>
                             <p><a href="mailto:info@rauseocostruzioni.com">info@rauseocostruzioni.com</a></p>
+                            <p><small>PEC: <a href="mailto:impresa@pec.rauseocostruzioni.com" style="color: #ccc;">impresa@pec.rauseocostruzioni.com</a></small></p>
                         </div>
                     </div>
                     <div class="info-item">
@@ -304,6 +352,7 @@
                 <a href="#servizi">Servizi</a>
                 <a href="#contatti">Contatti</a>
                 <a href="#">Privacy Policy</a>
+                <a href="#lavoraconnoi" >Lavora con Noi</a> 
             </div>
         </div>
         <div class="footer-bottom text-center">
